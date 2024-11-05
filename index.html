@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Health App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Mental Health App</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#mood-tracker">Mood Tracker</a>
+      <a href="#journal">Journal</a>
+      <a href="#meditation">Meditation</a>
+    </nav>
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <!-- Home Section -->
+    <section id="home">
+      <h2>Welcome to the Mental Health App</h2>
+      <p>Your journey to better mental health starts here.</p>
+    </section>
+
+    <!-- Mood Tracker Section -->
+    <section id="mood-tracker">
+      <h2>Track Your Mood</h2>
+      <label for="mood">Select your mood:</label>
+      <select id="mood">
+        <option value="happy">Happy</option>
+        <option value="sad">Sad</option>
+        <option value="neutral">Neutral</option>
+        <option value="anxious">Anxious</option>
+      </select>
+      <button onclick="saveMood()">Save Mood</button>
+      <p id="mood-display">Your current mood is: None</p>
+    </section>
+
+    <!-- Journal Section -->
+    <section id="journal">
+      <h2>Daily Journal</h2>
+      <textarea id="journal-entry" placeholder="Write your thoughts here..."></textarea>
+      <button onclick="saveJournal()">Save Entry</button>
+      <p id="journal-display">Your last journal entry will appear here.</p>
+    </section>
+
+    <!-- Meditation Section -->
+    <section id="meditation">
+      <h2>Guided Meditation</h2>
+      <button onclick="startMeditation()">Start a 5-Minute Meditation</button>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2024 Mental Health App</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
